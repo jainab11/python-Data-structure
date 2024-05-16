@@ -32,7 +32,7 @@ def circular_list(lst1,lst2):
     >>> are_circularly_identical([1, 2, 3, 4, 5], [5, 4, 3, 2, 1])
     False
     """
-    if len(lst1)!=len(lst2):
+    ''' if len(lst1)!=len(lst2):
         return False
     
     dq_lst = deque(lst1)
@@ -45,9 +45,9 @@ def circular_list(lst1,lst2):
 list1 = [1, 2, 3, 4, 5]
 list2 = [3, 4, 5, 1, 2]
 result = circular_list(list1, list2)
-print("Are the lists circularly identical?", result)
+print("Are the lists circularly identical?", result)'''
     
-''''def are_circularly_identical(list1, list2):
+def are_circularly_identical(list1, list2):
     # Check if the lengths of both lists are the same
     if len(list1) != len(list2):
         return False
@@ -66,6 +66,5 @@ list1 = [1, 2, 3, 4, 5]
 list2 = [3, 4, 5, 1, 2]
 result = are_circularly_identical(list1, list2)
 print("Are the lists circularly identical?", result)
-'''
-    
+
         
