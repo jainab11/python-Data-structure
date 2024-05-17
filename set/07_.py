@@ -14,9 +14,10 @@
 '''
 
 def union_of_set(set1,set2):
-    ans_set = {0}
+    ans_set = set()
     for item in set1:
-        if item  not in set2:
+        ans_set.add(item)
+    for item   in set2:
             ans_set.add(item)
     return ans_set
             
@@ -31,7 +32,8 @@ def main():
     print(set1|set2)
     
     ans = union_of_set(set1,set2)
-    
+    print("function code")
+    print(ans)
     
     
 if __name__ == "__main__":
