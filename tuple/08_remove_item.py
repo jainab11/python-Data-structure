@@ -25,8 +25,5 @@ def main():
     item = "jainab"
     ans = remove_item(my_tup,item)
     print(ans)
-    
-  
-
 if __name__ == "__main__":
     main()
