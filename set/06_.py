@@ -13,7 +13,10 @@
 '''
 
 def intersection_of_set(set1,set2):
-    ans_set = {0}
+    """"
+    This function is for intersection of set
+    """
+    ans_set = set()
     for item in set1:
         if item in set2:
             ans_set.add(item)
@@ -31,6 +34,7 @@ def main():
     print(set1&set2)
     
     ans = intersection_of_set(set1,set2)
+    print("This is intersection of set ",ans)
     
     
 if __name__ == "__main__":
