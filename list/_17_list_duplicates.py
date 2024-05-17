@@ -6,8 +6,15 @@
 @Title: 17. Write a Python program to remove duplicates from a list of lists.
 Sample list : [[10, 20], [40], [30, 56, 25], [10, 20], [33], [40]]
 New List : [[10, 20], [30, 56, 25], [33], [40]]'''
-# def remove_duplicates(lst):
-def remove_duplicates(input_list):
+def remove_duplicates(lst):
+    seen = set()
+    result = []
+    for sublist in lst:
+        if tuple(sublist) not in seen:
+            seen.add(tuple(sublist))
+            result.append(sublist)
+    return result
+def remove_duplicates2(input_list):
     new_list = []
     for item in input_list:
         if item not in new_list:
